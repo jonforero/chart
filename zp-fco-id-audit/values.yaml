@@ -81,13 +81,13 @@ liveness:
   enabled: false
   livenessProbe:  
     httpGet:
-      path: /
+      path: /health
       port: http
 readiness:
   enabled: false
   readinessProbe:
     httpGet:
-      path: /
+      path: /ready
       port: http
 
 autoscaling:
