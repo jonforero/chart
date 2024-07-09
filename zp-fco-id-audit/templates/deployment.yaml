@@ -41,13 +41,9 @@ spec:
             - name: http
               containerPort: {{ .Values.service.port }}
               protocol: TCP
-          {{- if .Values.liveness.enabled }}
-          livenessProbe:
-            {{- toYaml .Values.liveness.livenessProbe | nindent 12 }}
-          {{- end }}
-          {{- if .Values.readiness.enabled }}
-          readinessProbe:
-            {{- toYaml .Values.readiness.readinessProbe | nindent 12 }}
+          {{- if .Values.monitorConfig.enabled }}
+          livenessProbe: {{ .Values.monitorConfig.livenessProbe | toYaml | nindent 12 }}
+          readinessProbe: {{ .Values.monitorConfig.readinessProbe | toYaml | nindent 12 }}
           {{- end }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
