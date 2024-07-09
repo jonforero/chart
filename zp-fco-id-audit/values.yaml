@@ -77,14 +77,12 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
-liveness:
+monitorConfig::
   enabled: false
   livenessProbe:  
     httpGet:
       path: /health
       port: http
-readiness:
-  enabled: false
   readinessProbe:
     httpGet:
       path: /ready
