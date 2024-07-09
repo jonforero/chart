@@ -11,12 +11,12 @@ image:
   tag: "latest"
 
 imagePullSecrets: []
-nameOverride: "zp-fco-id-audit"
+nameOverride: "zp-fco-id-bio-services"
 fullnameOverride: ""
 
 spring:
   application:
-    name: "audit-ms"
+    name: "biometrics-ms"
 
 serviceAccount:
   # Specifies whether a service account should be created

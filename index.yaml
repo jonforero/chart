@@ -3,12 +3,23 @@ entries:
   zp-fco-id-audit:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-07-09T10:10:36.11953-05:00"
+    created: "2024-07-09T14:12:18.2662388-05:00"
     description: A Helm chart for Kubernetes
-    digest: 266e6dc51b59e5bae56da4e76558ec92bb2cbfb99ff0074d9e47026ced3a46ef
+    digest: 615c121e863cc24488abb2b925b0c8c1e8273038adffda56a8fde6a043c92a15
     name: zp-fco-id-audit
     type: application
     urls:
     - packages/zp-fco-id-audit-0.1.0.tgz
     version: 0.1.0
-generated: "2024-07-09T10:10:36.1170179-05:00"
+  zp-fco-id-bio-services:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-07-09T14:12:18.2671444-05:00"
+    description: A Helm chart for Kubernetes
+    digest: 67b1f38ceac5fb05a7ba5ddf7db25ac086995984ee57d9c4c234e01b60c20e45
+    name: zp-fco-id-bio-services
+    type: application
+    urls:
+    - packages/zp-fco-id-bio-services-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-07-09T14:12:18.2643324-05:00"
